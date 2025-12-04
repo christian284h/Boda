@@ -89,7 +89,7 @@ document.getElementById("addGift").addEventListener("click", () => {
 });
 
 // RSVP -> Google Sheets (Apps Script Web App)
-const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbxGMkJxDLOybjhrAY8xN8QwTD9F6_385LtQQJXZN7mhwRlBcgJDPsvPqdICJmSwwXeR/exec"; // Reemplaza con tu URL
+const RSVP_ENDPOINT = "/api/rsvp"; // Reemplaza con tu URL
 
 document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -173,4 +173,5 @@ async function loadGallery(){
     });
   }
 }
+
 loadGallery();
